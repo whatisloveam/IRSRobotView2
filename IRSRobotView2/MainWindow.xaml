@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IRSRobotView2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="650" Width="800">
+    <Grid x:Name="myGrid">
+        <Button Content="Flood it" HorizontalAlignment="Left" Margin="22,285,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="22,310,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="ConnectButton" Content="Connect" HorizontalAlignment="Left" Margin="147,312,0,0" VerticalAlignment="Top" Width="75" Click="ConnectButton_Click"/>
+        <Button x:Name="DisconnectButton" Content="Disconnect" HorizontalAlignment="Left" Margin="227,312,0,0" VerticalAlignment="Top" Width="76" Click="DisconnectButton_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="101" Margin="22,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="281" AcceptsReturn="True" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="SendButton" Content="Send" HorizontalAlignment="Left" Margin="228,443,0,0" VerticalAlignment="Top" Width="75" Click="SendButton_Click"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="23,443,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="S0_label" Content="s0: " HorizontalAlignment="Left" Margin="21,474,0,0" VerticalAlignment="Top" BorderBrush="#FFF12C2C" BorderThickness="1" Width="50"/>
+        <Label x:Name="S1_label" Content="s1: " HorizontalAlignment="Left" Margin="76,502,0,0" VerticalAlignment="Top" BorderBrush="#FFF12C2C" BorderThickness="1" Width="50"/>
+        <Label x:Name="S6_label" Content="s6: " HorizontalAlignment="Left" Margin="126,502,0,0" VerticalAlignment="Top" BorderBrush="#FFF12C2C" BorderThickness="1" Width="50"/>
+        <Label x:Name="S2_label" Content="s2: " HorizontalAlignment="Left" Margin="176,502,0,0" VerticalAlignment="Top" BorderBrush="#FFF12C2C" BorderThickness="1" Width="50"/>
+        <Label x:Name="S3_label" Content="s3: " HorizontalAlignment="Left" Margin="231,474,0,0" VerticalAlignment="Top" BorderBrush="#FFF12C2C" BorderThickness="1" RenderTransformOrigin="2.115,0.571" Width="50"/>
+        <Label x:Name="PosB_label" Content="posB: " HorizontalAlignment="Left" Margin="21,549,0,0" VerticalAlignment="Top" BorderBrush="#FF65AA02" BorderThickness="1" Width="90"/>
+        <Label x:Name="PosC_label" Content="posC: " HorizontalAlignment="Left" Margin="191,549,0,0" VerticalAlignment="Top" BorderBrush="#FF65AA02" BorderThickness="1" Width="90"/>
+        <Line x:Name="LeftWall" X1="10" X2="10" Y1="470" Y2="600" Stroke="Black" StrokeThickness="5" />
+        <Line x:Name="UpWall" X1="10" X2="300" Y1="470" Y2="470" Stroke="Black"  StrokeThickness="5"/>
+        <Line x:Name="RightWall" X1="300" X2="300" Y1="470" Y2="600" Stroke="Black" StrokeThickness="5"/>
+        <Button x:Name="ResetButton" Content="Reset" HorizontalAlignment="Left" Margin="126,285,0,0" VerticalAlignment="Top" Width="75" Click="ResetButton_Click"/>
+
     </Grid>
 </Window>
