@@ -141,6 +141,8 @@ namespace IRSRobotView2
             StartY = Constants.GreenY;
             FinishX = Constants.RedX;
             FinishY = Constants.RedY;
+
+            floodfill.Compute(StartX, StartY, FinishX, FinishY, Maze);
         }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
